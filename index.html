@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form class="menu" onsubmit="menu(); return false;">
+            <h1>MENU</h1>
+            <div class="abc">
+            <label for="days">Choose the day to check the available items:</label><br>
+            <select name="days" id="days">
+                <option value="Choose...">Choose...</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select><br>
+            <button type="submit" onclick="menu()">Submit</button>
+        </div>
+        </form>
+        <div class="result">
+            <ul id="list">
+                <h2 id="heading"></h2>
+                <li id="li1"></li>
+                <li id="li2"></li>
+                <li id="li3"></li>
+                <li id="li4"></li>
+                <li id="li5"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
